@@ -1,0 +1,18 @@
+TASK LIST
+
+task: moved equals() method to base class Money; see how operator overloads work. maybe ok now, but fail in the futrue?
+* add a teste thse operators work ok?
+
+testing equals() and  verify that object type dollar != franc
+* using typeid in base class, takes class& ref type; but derived classes are returning base class name, not derived class name
+* changed to add runttime type info in compiler (for exe, not for lib) - still gets base class type  ("money")
+* changed to add runttime type info in compiler (for exe, and for lib) - still gets base class type  ("money")
+* add virtual method getClass() and dont use it - but now the equals() method gets proper derived class types "dollar" "franc"
+-- http://msdn.microsoft.com/en-us/library/fyf39xec.aspx
+--  The expression must point to a polymorphic type (a class with virtual functions). Otherwise, the result is the type_info for the static class referred to in the expression.
+* remove and make the equals() method virtual; do not override in derived classes; test works now
+
+* change to use pointers with c++ factory method?
+* use smart pointesr with c++ pointer objects
+
+USING heap allocated objects, pointers; using std smartpointer; verify that NOT using smartpointer leads to memory leak
