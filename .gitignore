@@ -140,6 +140,8 @@ csx
 AppPackages/
 
 # Others
+.hg/
+.hgignore
 sql/
 *.Cache
 ClientBin/
